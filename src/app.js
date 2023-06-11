@@ -1,9 +1,9 @@
 import express from "express";
 import handlebars from "express-handlebars";
 import { Server } from "socket.io";
-import { ProductManager } from "./manager/productManager.js";
+import { ProductManager } from "./DAO/manager/productManager.js";
 import { realTimeProducts } from "./routes/real-time-products.routes.js";
-import { __dirname, connectMongo} from "./utils.js";
+import { __dirname, connectMongo} from "./utils/utils.js";
 import { routerUsers } from "./routes/users.router.js";
 
 const app = express();
