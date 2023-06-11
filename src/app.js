@@ -1,10 +1,13 @@
+
+//@ts-check
 import express from "express";
 import handlebars from "express-handlebars";
 import { Server } from "socket.io";
 import { ProductManager } from "./DAO/manager/productManager.js";
 import { realTimeProducts } from "./routes/real-time-products.routes.js";
-import { __dirname, connectMongo} from "./utils/utils.js";
+import { __dirname} from "./dirname.js";
 import { routerUsers } from "./routes/users.router.js";
+import { connectMongo } from "./utils/connections.js"
 
 const app = express();
 const port = 8080;
